@@ -60,6 +60,10 @@
         @include Margin($s-top: 60px, $s-bottom: 0, $s-left: 0, $s-right: 0);
     }
 
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        @include Margin($s-top: 0, $s-bottom: 0, $s-left: 165px, $s-right: 0);
+    }
+
     @media screen and (min-width: 1200px) {
         @include Margin($s-top: 12px, $s-bottom: 0, $s-left: 70px, $s-right: 0);
     }
@@ -101,6 +105,15 @@
 
 .socnetwork__icon {
     fill: currentColor;
+}
+
+.centred {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+    }
+
 }
 
 .subscription {
